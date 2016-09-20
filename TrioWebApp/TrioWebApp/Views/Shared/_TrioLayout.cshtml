@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Trio Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    
+  
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-2">logo</div>
+
+            <div class="col-sm-10 jumbotron">TRIO TRONIC COMPUTERS AND CLASSES</div>
+        </div>
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+
+                <ul class="nav nav-pills nav-stacked">
+                    
+                    <li class="active">@Html.ActionLink("Home", "TrioIndex", "TrioHome")</li>
+                    <li>@Html.ActionLink("About Us", "TrioAboutUs", "TrioHome")</li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul><br>
+
+            </div>
+
+            <div class="col-sm-10">
+                @RenderBody()
+            </div>
+        </div>
+
+
+       
+    </div>
+    
+        <footer  class="container-fluid">
+            <p>&copy; @DateTime.Now.Year  - TRIO web application</p>
+        </footer>
+   
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

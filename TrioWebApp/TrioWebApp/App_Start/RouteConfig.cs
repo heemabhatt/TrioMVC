@@ -16,7 +16,7 @@ namespace TrioWebApp
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "TrioHome", action = "TrioIndex", id = UrlParameter.Optional }
             );
         }
     }
