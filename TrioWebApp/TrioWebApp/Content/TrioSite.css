@@ -1,4 +1,6 @@
-﻿/*Trio css*/
+﻿
+
+/*Trio css*/
 
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 1500px}
@@ -19,3 +21,9 @@
       .row.content {height: auto;}
     }
   
+    /* Home page image carousel */
+     .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }

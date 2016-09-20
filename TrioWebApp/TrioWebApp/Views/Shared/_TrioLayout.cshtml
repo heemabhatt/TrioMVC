@@ -6,6 +6,21 @@
     <title>@ViewBag.Title - Trio Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+
+    
+        $(document).ready(function () {
+            
+            $(".nav li").click(function () {
+               
+                $(".nav li").removeClass("active");
+                $(this).addClass("active");
+
+            });
+        });
+
+    </script>
 
 </head>
 <body>
@@ -26,7 +41,7 @@
                     <li class="active">@Html.ActionLink("Home", "TrioIndex", "TrioHome")</li>
                     <li>@Html.ActionLink("About Us", "TrioAboutUs", "TrioHome")</li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact US</a></li>
+                    <li> @Html.ActionLink("Contact Us","TrioContactUs","TrioHome") </li>
                 </ul><br>
 
             </div>
