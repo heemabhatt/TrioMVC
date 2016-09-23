@@ -10,16 +10,6 @@
     <script>
 
     
-        $(document).ready(function () {
-            
-            $(".nav li").click(function () {
-               
-                $(".nav li").removeClass("active");
-                $(this).addClass("active");
-
-            });
-        });
-
     </script>
 
 </head>
@@ -38,10 +28,10 @@
 
                 <ul class="nav nav-pills nav-stacked">
                     
-                    <li class="active">@Html.ActionLink("Home", "TrioIndex", "TrioHome")</li>
-                    <li>@Html.ActionLink("About Us", "TrioAboutUs", "TrioHome")</li>
-                    <li><a href="#">Services</a></li>
-                    <li> @Html.ActionLink("Contact Us","TrioContactUs","TrioHome") </li>
+                    <li id="1">@Html.ActionLink("Home", "TrioIndex", "TrioHome")</li>
+                    <li id="2" >@Html.ActionLink("About Us", "TrioAboutUs", "TrioHome")</li>
+                    <li id="3"><a href="#">Services</a></li>
+                    <li id="4"> @Html.ActionLink("Contact Us","TrioContactUs","TrioHome") </li>
                 </ul><br>
 
             </div>

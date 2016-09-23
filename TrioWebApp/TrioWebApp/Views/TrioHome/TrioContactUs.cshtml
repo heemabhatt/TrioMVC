@@ -6,8 +6,13 @@
 }
 
 
-
 <div class="container">
+
+    @if (ViewBag.Message != null)
+    {
+        <p class="alert-success"> @ViewBag.Message </p>
+
+    }
     <h2>Contact Us</h2>
     <form class="form-horizontal" role="form" data-toggle="validator" method="post" action="/TrioHome/submitContactUs">
 
@@ -35,7 +40,7 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="comment">Comment:</label>
             <div class="col-sm-3">
-                <textarea class="form-control" rows="5" name="comment" id="txtCommment" required ></textarea>
+                <textarea class="form-control" rows="5" name="comment" id="txtCommment" required></textarea>
             </div>
         </div>
 

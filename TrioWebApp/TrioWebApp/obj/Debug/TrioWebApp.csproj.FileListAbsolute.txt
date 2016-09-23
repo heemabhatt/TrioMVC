@@ -77,6 +77,6 @@ C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\bin\Microsoft.Owin.Security.
 C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\bin\Microsoft.Owin.Security.Google.xml
 C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\obj\Debug\TrioWebApp.csprojResolveAssemblyReference.cache
 C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\obj\Debug\TrioWebApp.dll
 C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\obj\Debug\TrioWebApp.pdb
+C:\Projects\DotNetMVC\TrioMVC\TrioWebApp\TrioWebApp\obj\Debug\TrioWebApp.csprojResolveAssemblyReference.cache
