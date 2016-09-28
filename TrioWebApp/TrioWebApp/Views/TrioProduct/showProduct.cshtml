@@ -1,0 +1,97 @@
+﻿@model IEnumerable<TrioWebApp.Models.TrioProductModel>
+
+@{
+    ViewBag.Current = "TrioProduct";
+    ViewBag.Title = "showProducts";
+    Layout = "~/Views/Shared/_TrioLayout.cshtml";
+    
+}
+<script>
+
+        $(document).ready(function () {
+        $("#ddCategory").change(function () {
+               
+
+            var value = $("#ddCategory").val();
+
+       // alert(value);
+        $.ajax({
+            url: '/TrioProduct/GetProductDataJson',
+            type: 'GET',
+            data: {cat:value},
+            
+            success: function (data) {
+               
+
+                $("#tblData tr:not(:first)").remove();
+                var tr;
+                for (var i = 0; i < data.length; i++) {
+                    tr = $('<tr/>');
+                    tr.append("<td>" + data[i].category + "</td>");
+                    tr.append("<td>" + data[i].productName + "</td>");
+                    tr.append("<td>" + data[i].price + "</td>");
+                    tr.append("<td>" + data[i].description + "</td>");
+                    $('#tblData').append(tr);
+                }
+
+                            
+            },
+            error: function () {
+               
+            }
+        });
+
+        });
+        });
+
+</script>
+
+
+
+<h5>Select Category</h5>
+
+  @Html.DropDownList("Select Category", new SelectList(new[] { "Laptop", "Tab", "Mobile" }),"select", new { id = "ddCategory" })
+
+
+<table class="table" id="tblData">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+   
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>*@
+    </tr>
+   
+}
+
+</table>

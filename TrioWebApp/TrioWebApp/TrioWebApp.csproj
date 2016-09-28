@@ -199,6 +199,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TrioHomeController.cs" />
+    <Compile Include="Controllers\TrioProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,6 +208,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\TrioHomeModel.cs" />
+    <Compile Include="Models\TrioProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -282,6 +284,7 @@
     <Content Include="Views\TrioHome\TrioIndex.cshtml" />
     <Content Include="Views\TrioHome\TrioAboutUs.cshtml" />
     <Content Include="Views\TrioHome\TrioContactUs.cshtml" />
+    <Content Include="Views\TrioProduct\showProduct.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

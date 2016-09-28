@@ -18,4 +18,6 @@ namespace TrioWebApp.Models
         public string phone { get; set; }
         public string comment { get; set; }
     }
+
+   
 }

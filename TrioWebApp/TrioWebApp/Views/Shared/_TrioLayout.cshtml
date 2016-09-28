@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-sm-2">logo</div>
 
-            <div class="col-sm-10 jumbotron"><h1>TRIO TRONIC COMPUTERS AND CLASSES</h1></div>
+            <div class="col-sm-10 jumbotron"><h3>TRIO TRONIC COMPUTERS AND CLASSES</h3></div>
         </div>
         <div class="row content">
             <div class="col-sm-2 sidenav">
@@ -26,7 +26,7 @@
                 <ul class="nav nav-pills nav-stacked">
                     <li class="@(ViewBag.Current == "TrioIndex" ? "active" : "") "><a href="@Url.Action("TrioIndex", "TrioHome")" target="_self">Home</a></li>
                     <li class="@(ViewBag.Current == "TrioAboutUs" ? "active" : "") "><a href="@Url.Action("TrioAboutUs", "TrioHome")" target="_self">About Us</a></li>  
-                    <li><a href="#">Services</a></li>
+                    <li class="@(ViewBag.Current == "TrioProduct" ? "active" : "") "><a href="@Url.Action("showProduct", "TrioProduct")" target="_self">Products</a></li>  
                     <li class="@(ViewBag.Current == "TrioContactUs" ? "active" : "") "><a href="@Url.Action("TrioContactUs", "TrioHome")" target="_self">Contact Us</a></li>  
 
                 
